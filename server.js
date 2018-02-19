@@ -11,7 +11,12 @@ app.set("jsonp callback name", "cb");
 
 app.get('/foo', function(req, res){ 
   // important - you have to use the response.json method
-  res.jsonp("hello world");
+  res.jsonp("super secret response data foo");
+});
+
+app.get('/bar', function(req, res){ 
+  // important - you have to use the response.json method
+  res.jsonp("super secret response data bar");
 });
 
 var listener = app.listen(3000, function(){
