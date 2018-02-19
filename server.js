@@ -1,16 +1,19 @@
 'use strict';
 
-const express = require('express');
+var express = require('express');
 
-// Constants
-const PORT = 8123;
-const HOST = '0.0.0.0';
 
-// App
-const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello world\n');
+// var app = module.exports = express.createServer();
+var app = module.exports = express();
+// this enables jsonp support
+app.set("jsonp callback name", "cb");
+
+
+app.get('/foo', function(req, res){ 
+  // important - you have to use the response.json method
+  res.jsonp("hello world");
 });
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+var listener = app.listen(3000, function(){
+  console.log("Express server listening on port %d in %s mode", listener.address().port, app.settings.env); 
+});
