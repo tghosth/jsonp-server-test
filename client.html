@@ -7,7 +7,7 @@
                 $('#testlink').click(function(e){
                     e.preventDefault();
                     
-                    var url = 'http://tghdemo3.duckdns.org:3000/foo';
+                    var url = 'http://tghdemo3.duckdns.org:3000/bar';
 					
 					$.ajax({
 						url: url,
@@ -28,6 +28,12 @@
 					})
 					
 					url = url + '?cb=?';
+					
+                    $.getJSON(url, null, function(data){
+                        alert(''+data);
+                    });
+
+                    url = url.replace("bar","foo");
 					
                     $.getJSON(url, null, function(data){
                         alert(''+data);
