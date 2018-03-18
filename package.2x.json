@@ -1,0 +1,14 @@
+{
+    "name": "jsonp-server-test",
+    "version": "1.0.0",
+    "description": "Simple JSONP Server",
+    "author": "Josh Grossman",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.2x.js"
+    },
+    "dependencies": {
+      "express": "2.4.7",
+      "mime": "1.0.0"
+    }
+  }
