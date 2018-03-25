@@ -63,7 +63,7 @@ app.use(basicAuth({
 }))
 
 /*
-API #2 - the /foo endpoint
+API #3 - the /bar endpoint
 This API will return data if the basic authentication check has passed. Otherwise it will return a 401 error.
 */
 app.get('/bar', function(req, res){ 
