@@ -1,7 +1,7 @@
 {
     "name": "jsonp-server-test",
     "version": "1.0.0",
-    "description": "Simple JSONP Server",
+    "description": "Simple JSONP Server (using Express V2)",
     "author": "Josh Grossman",
     "main": "server.js",
     "scripts": {
