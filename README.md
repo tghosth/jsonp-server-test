@@ -1,4 +1,4 @@
 # jsonp-server-test
 
-Based on:
-- https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+Originally based on [this example](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) but it has got a lot more complex since then.
+
