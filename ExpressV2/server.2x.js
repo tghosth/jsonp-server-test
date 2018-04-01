@@ -13,6 +13,8 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 });
 
+// Now all you need to do is all this API with something like http://localhost:3000/foo?callback=doo
+// and it will return a JSONP response.
 app.get('/foo', function(req, res){ 
   // important - you have to use the response.json method
   res.json("hello world");
