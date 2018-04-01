@@ -7,7 +7,8 @@
                 $('#testlink').click(function(e){
                     e.preventDefault();
                     
-                    var url = 'http://tghdemo3.duckdns.org:3000/bar';
+                    // Assuming you are running the sample node app on localhost
+                    var url = 'http://127.0.0.1:3000/bar';
 					
 					$.ajax({
 						url: url,
